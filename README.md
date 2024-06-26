@@ -8,11 +8,17 @@
 
 ## Contenido 📚
 
-1. **Introducción a spring**
+1. **Introducción a spring teorico**
 
-3. **Desarrollo Frontend con spring**
+2. **Desarollo de primer proyecto de spring**
+
+3. **Desarrollo Frontend con bootstrap**
 
 4. **Desarrollo Backend con spring**
+   -CRUD
+   -Envio de correo
+   
+5. **Base de datos MySQL o MariaDB**
 
 ## ¿Cómo Usar Este Repositorio? 🚀
 
