@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <!--
+    <bean id="persona" class="fes.aragon.model.Persona"/>
+    <bean id="personaDos" class="fes.aragon.model.Persona">
+        <property name="nombre" value="Oscar" />
+        <property name="edad" value="23" />
+    </bean>
+    <bean id="personaTres" class="fes.aragon.model.Persona">
+        <constructor-arg name="nombre" value="Tomas"/>
+        <constructor-arg name="edad" value="34"/>
+    </bean>
+    <bean id="empleadoUno" class="fes.aragon.model.Empleado">
+        <property name="numTrabajador" value="001"/>
+        <property name="actividades" ref="actividadUno"/>
+    </bean>
+    <bean id="empleadoDos" class="fes.aragon.model.Empleado">
+        <property name="numTrabajador" value="002"/>
+        <property name="actividades" ref="actividadDos"/>
+    </bean>
+    <bean id="empleadoTres" class="fes.aragon.model.Empleado">
+        <property name="numTrabajador" value="003"/>
+        <property name="actividades" ref="actividadTres"/>
+    </bean>
+    <bean id="empleadoCuatro" class="fes.aragon.model.EmpleadoC">
+        <property name="nombre" value="Pedro"/>
+        <property name="edad"   value="31"/>
+        <property name="numTrabajador" value="004"/>
+        <property name="actividades">
+            <list>
+                <ref bean="actividadUno"/>
+                <ref bean="actividadTres"/>
+                <ref bean="actividadTres"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="empleadoCinco" class="fes.aragon.model.EmpleadoC">
+        <property name="nombre" value="Maria"/>
+        <property name="edad"   value="50"/>
+        <property name="numTrabajador" value="005"/>
+        <property name="actividades">
+            <set>
+                <ref bean="actividadUno"/>
+                <ref bean="actividadTres"/>
+                <ref bean="actividadUno"/>
+                <ref bean="actividadTres"/>
+            </set>
+        </property>
+    </bean>
+    <bean id="empleadoSeis" class="fes.aragon.model.EmpleadoM">
+        <property name="nombre" value="Juana"/>
+        <property name="edad"   value="40"/>
+        <property name="numTrabajador" value="006"/>
+        <property name="actividades">
+            <map>
+                <entry key="uno" value-ref="actividadDos"/>
+                <entry key="dos" value-ref="actividadUno"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="empleadoSiete" class="fes.aragon.model.EmpleadoP">
+        <property name="nombre" value="Raul"/>
+        <property name="edad"   value="17"/>
+        <property name="numTrabajador" value="007"/>
+        <property name="actividades">
+            <props>
+               <prop key="uno">"Gestion de proyectos"</prop>
+                <prop key="dos">"Planificacion de proyectos"</prop>
+            </props>
+        </property>
+    </bean> -->
+    <bean id="empleado" class="fes.aragon.model.Empleado"
+            autowire="constructor">
+        <property name="nombre" value="Tomas"/>
+        <property name="edad" value="23"/>
+        <property name="numTrabajador" value="001"/>
+    </bean>
+    <bean id="actividadesCero" class="fes.aragon.model.GestionProyectos"/>
+  <!--  <bean id="actividadNueva" class="fes.aragon.model.PlanificacionProyectos"/> -->
+</beans>

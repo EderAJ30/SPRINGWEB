@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head th:replace="~{plantillas/plantilla::head}"></head>
+<body>
+<header th:replace="~{plantillas/plantilla::header}"></header>
+<main class="container text-center">
+        <h1>Mandar Correo</h1>
+        <div class="card-body">
+               <!-- <form th:action="@{/correo/lista-correo}" method="post" >
+                  <form th:action="@{/correo/mandar-correo/{id}}" method="post"> -->
+               <form th:action="@{/correo/mandare-correo}" method="post" >
+                         <div class="row gx-5">
+                                 <div class="col-md-5">
+                                         <div class="form-group">
+                                                 <label for="asunto">Asunto</label>
+                                                 <input type="text" class="form-control" id="asunto" name="asunto"
+                                                          placeholder="Asunto">
+                                         </div>
+                                 </div>
+                                 <div class="col-md-5">
+                                         <div class="form-group">
+                                                 <label for="mensaje">Mensaje</label>
+                                                 <textarea type="text" class="form-control auto-growing" id="mensaje" name="mensaje"
+                                                           rows = "2"  placeholder="Mensaje"></textarea>
+                                         </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                         <br/>
+
+                                       <button type="submit" class="btn btn-success"><i class="fa fa-envelope" aria-hidden="true"></i> Enviar Correo</button>
+                                </div>
+                        </div>
+                </form>
+        </div>
+</main>
+<footer th:replace="~{plantillas/plantilla::footer}"></footer>
+</body>
+</html>
